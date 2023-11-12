@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeDrive</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-[#0f0f0f]">
+    <!-- Navbar -->
+    <nav
+      class="bg-[#0f0f0f] w-full flex py-[25px] px-[150px] justify-between fixed z-50"
+    >
+      <div class="left text-[#f5f5f7] text-[30px] font-PlayBd">SafeDrive</div>
+      <div class="right">
+        <ul class="flex gap-[20px] items-center h-full font-MontserratSb">
+          <li>
+            <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href="#Home">Home</a>
+          </li>
+          <li>
+            <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href="#Factors"
+              >Factors</a
+            >
+          </li>
+          <li>
+            <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href=""
+              >Regulation</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-[#d8d8d8] hover:text-[#f5f5f7] bg-red-600 py-2 px-3 rounded-full bg-opacity-80 hover:bg-opacity-70"
+              href=""
+              >Solution</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Landing Page -->
+    <section id="Home" class="h-[100vh]">
+      <div class="spacing px-[150px] items-center h-full flex relative">
+        <div class="leftImage w-[60%] h-auto relative">
+          <img
+            src="src/images/landingPage.jpg"
+            style="border-radius: 70px 10px 10px 10px"
+            class="object-contain"
+          />
+          <div
+            class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
+            style="border-radius: 70px 10px 10px 10px"
+          ></div>
+        </div>
+        <div
+          class="rightLanding w-[40%] bg-red-700 absolute right-[15%] py-10 px-16 text-center bg-opacity-70 rounded-xl"
+        >
+          <h1 class="font-PlayBd text-[50px] text-[#f5f5f7]">
+            FREEDOM, JAIL OR
+            <span style="color: transparent">HELL?</span>
+          </h1>
+          <p class="text-[#f5f5f7] font-MontserratRg">
+            Suatu peristiwa di jalan yang tidak diduga dan tidak disengaja
+            melibatkan kendaraan dengan atau tanpa pengguna jalan lain yang
+            mengakibatkan korban manusia dan/atau kerugian harta benda
+          </p>
+          <div class="btn flex justify-around mt-5 leading-tight">
+            <a
+              href=""
+              class="bg-black font-MontserratRg border-2 border-black hover:border-transparent hover:bg-[#f5f5f7] hover:text-black text-[#f5f5f7] py-2 px-10 rounded-full"
+              >Solution</a
+            >
+            <a
+              href=""
+              class="bg-transparent hover:bg-black hover:border-transparent font-MontserratRg border-2 text-[#f5f5f7] py-2 px-10 rounded-full"
+              >Keep Scrolling</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Landing Page -->
+
+    <!-- Factors -->
+    <section id="Factors" class="mt-16 h-[80vh] bg-[#f5f5f7]">
+      <div class="flex w-full h-full">
+        <div class="w-[25%] h-full relative">
+          <img src="./src/images/kelalaian.jpg" class="h-full" alt="" />
+          <div
+            class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
+          ></div>
+          <h1
+            class="absolute top-2 left-5 text-white text-[30px] font-PlayBd tracking-widest"
+          >
+            FACTOR 1
+          </h1>
+          <p
+            class="bottom-36 absolute -left-28 -rotate-90 font-MontserratRg text-white"
+          >
+            Playing Smartphone while Driving
+          </p>
+        </div>
+        <div class="w-[25%] h-full relative">
+          <img src="./src/images/jalanRusak.jpg" class="h-full" alt="" />
+          <div
+            class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
+          ></div>
+          <h1
+            class="absolute top-2 left-5 text-white text-[30px] font-PlayBd tracking-widest"
+          >
+            FACTOR 2
+          </h1>
+          <p
+            class="bottom-20 absolute -left-10 -rotate-90 font-MontserratRg text-white"
+          >
+            The Broken Road
+          </p>
+        </div>
+        <div class="w-[25%] h-full relative">
+          <img src="./src/images/kendaraan.jpg" class="w-full h-full" alt="" />
+          <div
+            class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
+          ></div>
+          <h1
+            class="absolute top-2 left-5 text-white text-[30px] font-PlayBd tracking-widest"
+          >
+            FACTOR 3
+          </h1>
+          <p
+            class="bottom-24 absolute -left-10 -rotate-90 font-MontserratRg text-white"
+          >
+            The Broken Vehicle
+          </p>
+        </div>
+        <div class="w-[25%] h-full relative">
+          <img src="./src/images/mengantuk.jpg" class="h-full" alt="" />
+          <div
+            class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
+          ></div>
+          <h1
+            class="absolute top-2 left-5 text-white text-[30px] font-PlayBd tracking-widest"
+          >
+            FACTOR 4
+          </h1>
+          <p
+            class="bottom-16 absolute -left-3 -rotate-90 font-MontserratRg text-white"
+          >
+            Microsleep
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MontserratRg";
+  src: local("Montserrat"),
+    url("./src/Fonts/Montserrat-Regular.ttf") format("trueType");
+}
+@font-face {
+  font-family: "MontserratSb";
+  src: local("Montserrat"),
+    url("./src/Fonts/Montserrat-SemiBold.ttf") format("trueType");
+}
+@font-face {
+  font-family: "PlayRg";
+  src: local("Play"), url("./src/Fonts/Play-Regular.ttf") format("trueType");
+}
+@font-face {
+  font-family: "PlayBd";
+  src: local("Play"), url("./src/Fonts/Play-Bold.ttf") format("trueType");
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.rightLanding h1 span {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #f5f5f5;
+}
