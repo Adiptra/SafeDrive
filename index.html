@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SafeDrive</title>
     <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href=" rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body class="bg-[#0f0f0f]">
     <!-- Navbar -->
     <nav
-      class="bg-[#0f0f0f] w-full flex py-[25px] px-[150px] justify-between fixed z-50"
+      class="bg-[#0f0f0f] w-full flex py-[10px] px-[70px] justify-between fixed z-50"
     >
       <div class="left text-[#f5f5f7] text-[30px] font-PlayBd">SafeDrive</div>
       <div class="right">
-        <ul class="flex gap-[20px] items-center h-full font-MontserratSb">
+        <ul class="flex gap-[30px] items-center h-full font-MontserratSb">
           <li>
             <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href="#Home">Home</a>
           </li>
@@ -27,8 +27,8 @@
             >
           </li>
           <li>
-            <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href=""
-              >Regulation</a
+            <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href="#Obligations"
+              >Obligations</a
             >
           </li>
           <li>
@@ -65,18 +65,16 @@
             <span style="color: transparent">HELL?</span>
           </h1>
           <p class="text-[#f5f5f7] font-MontserratRg">
-            Suatu peristiwa di jalan yang tidak diduga dan tidak disengaja
-            melibatkan kendaraan dengan atau tanpa pengguna jalan lain yang
-            mengakibatkan korban manusia dan/atau kerugian harta benda
+            An unexpected and unintentional road event involving a vehicle
           </p>
           <div class="btn flex justify-around mt-5 leading-tight">
             <a
-              href=""
+              href="#Solutions"
               class="bg-black font-MontserratRg border-2 border-black hover:border-transparent hover:bg-[#f5f5f7] hover:text-black text-[#f5f5f7] py-2 px-10 rounded-full"
               >Solution</a
             >
             <a
-              href=""
+              href="#Factors"
               class="bg-transparent hover:bg-black hover:border-transparent font-MontserratRg border-2 text-[#f5f5f7] py-2 px-10 rounded-full"
               >Keep Scrolling</a
             >
@@ -89,7 +87,7 @@
     <!-- Factors -->
     <section id="Factors" class="mt-16 h-[80vh] bg-[#f5f5f7]">
       <div class="flex w-full h-full">
-        <div class="w-[25%] h-full relative">
+        <div class="w-[25%] h-full relative grayscale">
           <img src="./src/images/kelalaian.jpg" class="h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -105,7 +103,7 @@
             Playing Smartphone while Driving
           </p>
         </div>
-        <div class="w-[25%] h-full relative">
+        <div class="w-[25%] h-full relative grayscale">
           <img src="./src/images/jalanRusak.jpg" class="h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -121,7 +119,7 @@
             The Broken Road
           </p>
         </div>
-        <div class="w-[25%] h-full relative">
+        <div class="w-[25%] h-full relative grayscale">
           <img src="./src/images/kendaraan.jpg" class="w-full h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -137,7 +135,7 @@
             The Broken Vehicle
           </p>
         </div>
-        <div class="w-[25%] h-full relative">
+        <div class="w-[25%] h-full relative grayscale">
           <img src="./src/images/mengantuk.jpg" class="h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -152,6 +150,124 @@
           >
             Microsleep
           </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Factors -->
+
+    <!-- Regulation -->
+    <section id="Obligations" class="mt-16 h-[100vh]">
+      <div class="spacing w-full h-full px-[70px] flex justify-between">
+        <div class="left w-[60%]">
+          <div class="title flex h-[50px]">
+            <h1 class="font-PlayBd text-[45px] text-[#f5f5f7]">Obligations.</h1>
+            <div class="line ml-3 h-full w-full flex items-end">
+              <div class="bg-[#f5f5f7] opacity-70 h-[5px] w-full"></div>
+            </div>
+          </div>
+          <div class="card flex w-full gap-10 mt-10">
+            <div class="w-[30%] text-center">
+              <div class="w-full relative">
+                <img
+                  src="./src/images/kondisiPengemudi.jpg"
+                  style="border-radius: 5px"
+                  class="w-full h-[55%] grayscale"
+                  alt=""
+                />
+                <div
+                  class="bg-black bg-opacity-60 w-full h-full absolute top-0"
+                  style="border-radius: 5px"
+                ></div>
+              </div>
+              <h1 class="mt-11 font-MontserratSb text-lg text-[#f5f5f7]">
+                Make sure in a good shape
+              </h1>
+              <p class="mt-9 text-[#f5f5f7] font-MontserratRg">
+                Drivers are required to be healthy and fit when driving on the
+                road. If the driver is unwell, sleepy, under the influence of
+                drugs, it is feared that he will not be able to focus on driving
+                properly.
+              </p>
+            </div>
+            <div class="w-[30%] text-center">
+              <div class="w-full relative">
+                <img
+                  src="./src/images/kondisiKendaraan.jpg"
+                  class="w-full h-[55%] grayscale"
+                  style="border-radius: 5px"
+                  alt=""
+                />
+                <div
+                  class="bg-black bg-opacity-60 w-full h-full absolute top-0"
+                  style="border-radius: 5px"
+                ></div>
+              </div>
+              <h1 class="mt-11 font-MontserratSb text-lg text-[#f5f5f7]">
+                Check the condition of the vehicle
+              </h1>
+              <p class="mt-9 text-[#f5f5f7] font-MontserratRg">
+                Checking the vehicle is something that must be done before
+                traveling, such as the condition of the oil, tires, brakes,
+                battery condition, radiator water.
+              </p>
+            </div>
+            <div class="w-[30%] text-center">
+              <div class="w-full h-[51%] relative">
+                <img
+                  src="./src/images/sabukPengaman.jpg"
+                  style="border-radius: 5px"
+                  class="w-full h-full grayscale"
+                  alt=""
+                />
+                <div
+                  class="bg-black bg-opacity-60 w-full h-full absolute top-0"
+                  style="border-radius: 5px"
+                ></div>
+              </div>
+              <h1 class="mt-11 font-MontserratSb text-lg text-[#f5f5f7]">
+                Use safety equipment
+              </h1>
+              <p class="mt-20 text-[#f5f5f7] font-MontserratRg">
+                Before riders travel, they are required to wear safety
+                equipment, such as helmets for motorbike riders and seat belts
+                for car drivers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right w-[30%]">
+          <div class="mt-[40px]">
+            <div>
+              <h1 class="font-MontserratSb text-xl text-[#f5f5f7]">
+                <i class="fa-solid fa-id-card text-[#f5f5f7] mr-3"></i> Have a
+                driving license
+              </h1>
+              <p class="font-MontserratRg text-lg mt-3 text-[#f5f5f7]">
+                is proof of registration and identification given by the
+                National Police to someone who has met the requirements
+              </p>
+            </div>
+            <div class="mt-10">
+              <h1 class="font-MontserratSb text-xl text-[#f5f5f7]">
+                <i class="fa-solid fa-money-bill text-[#f5f5f7] mr-3"></i> Pay
+                taxes
+              </h1>
+              <p class="font-MontserratRg text-lg mt-3 text-[#f5f5f7]">
+                is a tax that must be paid by every motorized vehicle owner who
+                operates his vehicle on public roads.
+              </p>
+            </div>
+            <div class="mt-10">
+              <h1 class="font-MontserratSb text-xl text-[#f5f5f7]">
+                <i class="fa-solid fa-traffic-light text-[#f5f5f7] mr-3"></i>
+                Obey the rules
+              </h1>
+              <p class="font-MontserratRg text-lg mt-3 text-[#f5f5f7]">
+                We must obey the rules because the rules are made to create
+                order and order.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
