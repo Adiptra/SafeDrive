@@ -13,11 +13,15 @@
   <body class="bg-[#0f0f0f]">
     <!-- Navbar -->
     <nav
-      class="bg-[#0f0f0f] w-full flex py-[10px] px-[70px] justify-between fixed z-50"
+      class="bg-[#0f0f0f] w-full flex py-[10px] px-[40px] md:px-[70px] justify-between fixed z-50"
     >
-      <div class="left text-[#f5f5f7] text-[30px] font-PlayBd">SafeDrive</div>
+      <div class="left text-[#f5f5f7] text-[25px] md:text-[30px] font-PlayBd">
+        SafeDrive
+      </div>
       <div class="right">
-        <ul class="flex gap-[30px] items-center h-full font-MontserratSb">
+        <ul
+          class="hidden lg:flex gap-[30px] items-center h-full font-MontserratSb"
+        >
           <li>
             <a class="text-[#d8d8d8] hover:text-[#f5f5f7]" href="#Home">Home</a>
           </li>
@@ -35,18 +39,65 @@
             <a
               class="text-[#d8d8d8] hover:text-[#f5f5f7] bg-red-600 py-2 px-3 rounded-full bg-opacity-80 hover:bg-opacity-70"
               href=""
-              >Solution</a
+              >Solutions</a
             >
           </li>
         </ul>
       </div>
+      <div class="hidden mobileMenu absolute top-14 w-auto">
+        <ul class="">
+          <li>
+            <a
+              href="#Home"
+              class="block text-sm px-2 py-4 text-white font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Factors"
+              class="block text-sm px-2 py-4 text-white font-semibold"
+              >Factors</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Obligations"
+              class="block text-sm px-2 py-4 text-white font-semibold"
+              >Obligations</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Solution"
+              class="block text-sm px-2 py-4 text-white font-semibold"
+              >Solutions</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="lg:hidden flex items-center">
+        <a class="mobileBtn" href="javascript:void(0);"
+          ><i class="fa-solid fa-bars-staggered text-[25px] text-[#f5f5f7]"></i
+        ></a>
+      </div>
+      <script>
+        const btn = document.querySelector("a.mobileBtn");
+        const menu = document.querySelector(".mobileMenu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
     </nav>
     <!-- End Navbar -->
 
     <!-- Landing Page -->
     <section id="Home" class="h-[100vh]">
-      <div class="spacing px-[150px] items-center h-full flex relative">
-        <div class="leftImage w-[60%] h-auto relative">
+      <div
+        class="spacing px-[40px] md:px-[150px] pt-32 md:pt-0 items-center h-full md:flex relative"
+      >
+        <div class="leftImage w-full md:w-[60%] h-auto relative">
           <img
             src="src/images/landingPage.jpg"
             style="border-radius: 70px 10px 10px 10px"
@@ -58,16 +109,16 @@
           ></div>
         </div>
         <div
-          class="rightLanding w-[40%] bg-red-700 absolute right-[15%] py-10 px-16 text-center bg-opacity-70 rounded-xl"
+          class="rightLanding w-full mt-10 md:mt-0 md:w-[40%] bg-red-700 md:absolute md:right-[15%] py-10 px-16 text-center bg-opacity-70 rounded-xl"
         >
-          <h1 class="font-PlayBd text-[50px] text-[#f5f5f7]">
+          <h1 class="font-PlayBd text-[30px] md:text-[50px] text-[#f5f5f7]">
             FREEDOM, JAIL OR
             <span style="color: transparent">HELL?</span>
           </h1>
           <p class="text-[#f5f5f7] font-MontserratRg">
             An unexpected and unintentional road event involving a vehicle
           </p>
-          <div class="btn flex justify-around mt-5 leading-tight">
+          <div class="btn md:flex justify-around mt-5 leading-tight">
             <a
               href="#Solutions"
               class="bg-black font-MontserratRg border-2 border-black hover:border-transparent hover:bg-[#f5f5f7] hover:text-black text-[#f5f5f7] py-2 px-10 rounded-full"
@@ -75,7 +126,7 @@
             >
             <a
               href="#Factors"
-              class="bg-transparent hover:bg-black hover:border-transparent font-MontserratRg border-2 text-[#f5f5f7] py-2 px-10 rounded-full"
+              class="bg-transparent hidden md:inline hover:bg-black hover:border-transparent font-MontserratRg border-2 text-[#f5f5f7] py-2 px-10 rounded-full"
               >Keep Scrolling</a
             >
           </div>
@@ -85,9 +136,9 @@
     <!-- End Landing Page -->
 
     <!-- Factors -->
-    <section id="Factors" class="mt-16 h-[80vh] bg-[#f5f5f7]">
-      <div class="flex w-full h-full">
-        <div class="w-[25%] h-full relative grayscale">
+    <section id="Factors" class="mt-16 md:h-[80vh]">
+      <div class="py-[40px] px-[40px] md:flex w-full h-full">
+        <div class="w-full md:w-[25%] h-full relative grayscale">
           <img src="./src/images/kelalaian.jpg" class="h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -103,7 +154,7 @@
             Playing Smartphone while Driving
           </p>
         </div>
-        <div class="w-[25%] h-full relative grayscale">
+        <div class="w-full md:w-[25%] h-full relative grayscale">
           <img src="./src/images/jalanRusak.jpg" class="h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -119,7 +170,7 @@
             The Broken Road
           </p>
         </div>
-        <div class="w-[25%] h-full relative grayscale">
+        <div class="w-full md:w-[25%] h-full relative grayscale">
           <img src="./src/images/kendaraan.jpg" class="w-full h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -135,7 +186,7 @@
             The Broken Vehicle
           </p>
         </div>
-        <div class="w-[25%] h-full relative grayscale">
+        <div class="w-full md:w-[25%] h-full relative grayscale">
           <img src="./src/images/mengantuk.jpg" class="h-full" alt="" />
           <div
             class="bg-black bg-opacity-50 w-full h-full top-0 absolute"
@@ -155,18 +206,18 @@
     </section>
     <!-- End Factors -->
 
-    <!-- Regulation -->
+    <!-- Obligation -->
     <section id="Obligations" class="mt-16 h-[100vh]">
-      <div class="spacing w-full h-full px-[70px] flex justify-between">
-        <div class="left w-[60%]">
+      <div class="spacing w-full h-full px-[70px] md:flex justify-between">
+        <div class="left md:w-[60%]">
           <div class="title flex h-[50px]">
             <h1 class="font-PlayBd text-[45px] text-[#f5f5f7]">Obligations.</h1>
-            <div class="line ml-3 h-full w-full flex items-end">
+            <div class="line ml-3 h-full w-full hidden md:flex items-end">
               <div class="bg-[#f5f5f7] opacity-70 h-[5px] w-full"></div>
             </div>
           </div>
-          <div class="card flex w-full gap-10 mt-10">
-            <div class="w-[30%] text-center">
+          <div class="card md:flex w-full gap-10 mt-10">
+            <div class="w-full md:w-[30%] text-center">
               <div class="w-full relative">
                 <img
                   src="./src/images/kondisiPengemudi.jpg"
@@ -189,7 +240,7 @@
                 properly.
               </p>
             </div>
-            <div class="w-[30%] text-center">
+            <div class="w-full md:w-[30%] mt-10 md:mt-0 text-center">
               <div class="w-full relative">
                 <img
                   src="./src/images/kondisiKendaraan.jpg"
@@ -211,7 +262,7 @@
                 battery condition, radiator water.
               </p>
             </div>
-            <div class="w-[30%] text-center">
+            <div class="w-full mt-10 md:w-[30%] text-center">
               <div class="w-full h-[51%] relative">
                 <img
                   src="./src/images/sabukPengaman.jpg"
@@ -235,7 +286,7 @@
             </div>
           </div>
         </div>
-        <div class="right w-[30%]">
+        <div class="right w-full md:w-[30%]">
           <div class="mt-[40px]">
             <div>
               <h1 class="font-MontserratSb text-xl text-[#f5f5f7]">
