@@ -28,6 +28,7 @@ html {
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .rightLanding h1 span {
